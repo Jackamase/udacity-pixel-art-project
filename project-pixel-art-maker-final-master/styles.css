@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-color: rgba(241, 241, 241, 0.753);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 70px;
+    margin: 0.2em;
+    text-shadow: 3px 3px darkgray;
+}
+
+h2 {
+    margin: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+input[type=number] {
+    align-self: center;
+    width: 9em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+input[type=button] {
+    align-self: center;
+    width: 9em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 2px 2px lightgrey;
+}
+
+/* Tool Bar CSS */
+.tool {
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    text-align: left;
+    box-shadow: 5px 5px darkgrey;
+    margin: 40px 20px;
+}
+
+#colorTool {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+#drawingTool {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+#colorPicker {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+#sizePicker {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+/* Canvas CSS */
+.pixel {
+    aspect-ratio: 1;
+    border: grey 1px dashed;
+}
+
+:root {
+    --grid-cols: 20;
+    --grid-rows: 20;
+}
+
+#canvasTools {
+    align-items: stretch;
+}
+
+#pixelCanvas {
+    border-radius: 5px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    border-collapse: collapse;
+    margin: auto;
+    margin-right: 10px;
+}
+
